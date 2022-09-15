@@ -54,12 +54,6 @@ namespace Web.Context
                 entity.HasMany(x => x.DisciplineTeachers).WithOne(x => x.Teacher);
             });
 
-            modelBuilder.Entity<LessonType>(entity =>
-            {
-                entity.HasKey(x => x.Id);
-                entity.Property(x => x.Title).IsRequired();
-            });
-
             modelBuilder.Entity<Group>(entity =>
             {
                 entity.HasKey(x => x.Id);
@@ -70,8 +64,6 @@ namespace Web.Context
             {
                 entity.HasKey(x => x.Id);
                 entity.Property(x => x.Title).IsRequired();
-
-                entity.HasMany(x => x.Couples).WithOne(x => x.LessonType);
             });
 
             modelBuilder.Entity<DisciplineTeacher>(entity =>
