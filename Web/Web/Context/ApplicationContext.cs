@@ -107,7 +107,7 @@ namespace Web.Context
                 entity.HasKey(x => x.Id);
                 entity.Property(x => x.WeekType).IsRequired();
                 entity.Property(x => x.WeekDay).IsRequired();
-                entity.Property(x => x.LessonType).IsRequired();
+                entity.Property(x => x.LectureTime).IsRequired();
 
                 entity.HasOne(x => x.Audience).WithMany(x => x.Couples);
                 entity.HasOne(x => x.Discipline).WithMany(x => x.Couples);
