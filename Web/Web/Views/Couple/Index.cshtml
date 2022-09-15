@@ -1,0 +1,71 @@
+﻿@using Web.Models
+@model IEnumerable<Couple>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Рассписание занятий</h1>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Неделя
+                </th>
+                <th>
+                    День
+                </th>
+                <th>
+                    Пара
+                </th>
+                <th>
+                    Аудитория
+                </th>
+                <th>
+                    Дисциплина
+                </th>
+                <th>
+                    Преподователь
+                </th>
+                <th>
+                    Тип
+                </th>
+                <th>
+                    Группа
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var c in Model)
+            {
+                <tr>
+                    <th>
+                        @c.WeekType
+                    </th>
+                    <th>
+                        @c.WeekDay
+                    </th>
+                    <th>
+                        @c.LectureTime
+                    </th>
+                    <th>
+                        @c.Audience.Number
+                    </th>
+                    <th>
+                        @c.Discipline.Title
+                    </th>
+                    <th>
+                        @(c.Teacher.Name + " " + c.Teacher.Surname + " " + c.Teacher.Patronymic)
+                    </th>
+                    <th>
+                        @c.LessonType.Title
+                    </th>
+                    <th>
+                        @c.Group.Title
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = X:\GitHub\Organization-Educational-Process-University\Web\Web
 build_property._RazorSourceGeneratorDebug = 
 
+[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Couple/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cGxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

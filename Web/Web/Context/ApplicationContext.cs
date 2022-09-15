@@ -116,13 +116,5 @@ namespace Web.Context
                 entity.HasOne(x => x.Group).WithMany(x => x.Couples);
             });
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseNpgsql();
-            }
-        }
     }
 }
