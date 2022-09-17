@@ -4,13 +4,14 @@ using Web.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ICoupleRepository, MockCoupleRepository>();
 
 var connectionString = builder.Configuration.GetConnectionString("Context");
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql(connectionString));
 
-builder.Services.AddScoped<ICoupleRepository, MockCoupleRepository>();
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -25,6 +26,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
