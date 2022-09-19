@@ -13,7 +13,6 @@ namespace Web.Models
         /// В каком корпусе
         /// </summary>
         public Campus Campus { get; set; } = new();
-
         public ICollection<Couple> Couples { get; set; } = new List<Couple>();
     }
 }

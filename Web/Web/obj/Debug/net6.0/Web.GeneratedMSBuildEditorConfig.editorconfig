@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web
 build_property.RootNamespace = Web
-build_property.ProjectDir = X:\GitHub\Organization-Educational-Process-University\Web\Web\
+build_property.ProjectDir = E:\GitHub\Organization-Educational-Process-University\Web\Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = X:\GitHub\Organization-Educational-Process-University\Web\Web
+build_property.MSBuildProjectDirectory = E:\GitHub\Organization-Educational-Process-University\Web\Web
 build_property._RazorSourceGeneratorDebug = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Couple/Index.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Couple/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cGxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Home/Index.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Home/Privacy.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/_ViewImports.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/_ViewStart.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Shared/_Layout.cshtml]
+[E:/GitHub/Organization-Educational-Process-University/Web/Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lzldzk1rll

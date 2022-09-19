@@ -7,6 +7,6 @@ namespace Web.Models
     {
         [Required]
         public string Title { get; set; } = string.Empty;
-        public ICollection<Couple> Couples { get; set; } = new List<Couple>();
+        public Couple Couple { get; set; } = new();
     }
 }

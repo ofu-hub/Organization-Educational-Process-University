@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4kQJy3QLhjGl6TKfl/976Qh1uhqE/OO2oHWfr6bM1CWSka6HohDp1sobZkhZqPqy/SaDd5Q0LkERS1qmq0e9dg==",
+  "dgSpecHash": "1y7ZQFLVCV7jL0b6KpYu5I/ycXbLeJJ+L1KwWXu3Xn70lM4Nc7wlxvGs6JxFoTI351HkgDc4IYlUVrp8sXHMlw==",
   "success": true,
-  "projectFilePath": "X:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj",
+  "projectFilePath": "E:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmark\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pmark\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",

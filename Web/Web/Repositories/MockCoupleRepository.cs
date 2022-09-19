@@ -40,13 +40,20 @@ namespace Web.Repositories
 				new()
 				{
 					Id = 0,
-					LectureTime = 0,
-					WeekDay = 0,
-					WeekType = 0,
+					WeekDay = new()
+					{
+						Id = 0,
+						Name = "Понедельник",
+						Week = new()
+						{
+							Id = 0,
+							Name = "Нечётная"
+						}
+					},
 					Audience = new()
 					{
 						Id = 0,
-						Number = "A101",
+						Number = "А101",
 						Campus = new()
 						{
 							Id = 0,
@@ -58,11 +65,24 @@ namespace Web.Repositories
 						Id = 0,
 						Title = "Математика"
 					},
-					Group = new()
+					Groups = new List<Group>()
 					{
-						Id = 0,
-						Title = "ОГ-11"
-					},
+						new()
+                        {
+							Id = 0,
+							Title = "ИБ-11"
+                        },
+                        new()
+                        {
+                            Id = 0,
+                            Title = "ОГ-11"
+                        },
+                        new()
+                        {
+                            Id = 0,
+                            Title = "КХ-11"
+                        },
+                    },
 					LessonType = new()
 					{
 						Id = 0,
@@ -72,50 +92,118 @@ namespace Web.Repositories
 					{
 						Id = 0,
 						Name = "Павел",
-						Surname = "Маркелов",
+						Surname = "Булатов",
 						Patronymic = "Николаевич"
-					}
+					},
+					LectureTime = Models.Utils.LectureTime.First
 				},
-				new()
-				{
-					Id = 1,
-					LectureTime = Models.Utils.LectureTime.Second,
-					WeekDay = 0,
-					WeekType = 0,
-					Audience = new()
-					{
-						Id = 0,
-						Number = "A101",
-						Campus = new()
-						{
-							Id = 0,
-							Number = "1"
-						}
-					},
-					Discipline = new()
-					{
-						Id = 0,
-						Title = "Математика"
-					},
-					Group = new()
-					{
-						Id = 0,
-						Title = "ДБ-11"
-					},
-					LessonType = new()
-					{
-						Id = 0,
-						Title = "Лекция"
-					},
-					Teacher = new()
-					{
-						Id = 0,
-						Name = "Павел",
-						Surname = "Маркелов",
-						Patronymic = "Николаевич"
-					}
-				}
-			};
+                new()
+                {
+                    Id = 1,
+                    WeekDay = new()
+                    {
+                        Id = 0,
+                        Name = "Понедельник",
+                        Week = new()
+                        {
+                            Id = 0,
+                            Name = "Нечётная"
+                        }
+                    },
+                    Audience = new()
+                    {
+                        Id = 0,
+                        Number = "А204",
+                        Campus = new()
+                        {
+                            Id = 0,
+                            Number = "1"
+                        }
+                    },
+                    Discipline = new()
+                    {
+                        Id = 0,
+                        Title = "Математика"
+                    },
+                    Groups = new List<Group>()
+                    {
+                        new()
+                        {
+                            Id = 0,
+                            Title = "ИБ-11"
+                        },
+                    },
+                    LessonType = new()
+                    {
+                        Id = 1,
+                        Title = "Практика"
+                    },
+                    Teacher = new()
+                    {
+                        Id = 0,
+                        Name = "Павел",
+                        Surname = "Булатов",
+                        Patronymic = "Николаевич"
+                    },
+                    LectureTime = Models.Utils.LectureTime.Second
+                },
+                new()
+                {
+                    Id = 2,
+                    WeekDay = new()
+                    {
+                        Id = 0,
+                        Name = "Понедельник",
+                        Week = new()
+                        {
+                            Id = 0,
+                            Name = "Чётная"
+                        }
+                    },
+                    Audience = new()
+                    {
+                        Id = 0,
+                        Number = "А301",
+                        Campus = new()
+                        {
+                            Id = 0,
+                            Number = "5"
+                        }
+                    },
+                    Discipline = new()
+                    {
+                        Id = 0,
+                        Title = "Разработка веб-приложений"
+                    },
+                    Groups = new List<Group>()
+                    {
+                        new()
+                        {
+                            Id = 0,
+                            Title = "ИБ-11"
+                        },
+                        new()
+                        {
+                            Id = 0,
+                            Title = "ИБ-12"
+                        },
+
+                    },
+                    LessonType = new()
+                    {
+                        Id = 1,
+                        Title = "Лабораторная"
+                    },
+                    Teacher = new()
+                    {
+                        Id = 0,
+                        Name = "Селимов",
+                        Surname = "Загидин",
+                        Patronymic = "Мурадович"
+                    },
+                    LectureTime = Models.Utils.LectureTime.Fourth
+                }
+            };
         }
 	}
 }

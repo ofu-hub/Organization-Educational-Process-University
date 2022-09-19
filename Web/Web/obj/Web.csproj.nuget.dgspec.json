@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj": {}
+    "E:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj": {}
   },
   "projects": {
-    "X:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj": {
+    "E:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj",
+        "projectUniqueName": "E:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "X:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj",
+        "projectPath": "E:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\Web.csproj",
         "packagesPath": "C:\\Users\\pmark\\.nuget\\packages\\",
-        "outputPath": "X:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\obj\\",
+        "outputPath": "E:\\GitHub\\Organization-Educational-Process-University\\Web\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pmark\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

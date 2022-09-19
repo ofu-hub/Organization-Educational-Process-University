@@ -33,7 +33,18 @@ namespace Web.Context
         /// Коллекция отношений дисциплин и преподователей
         /// </summary>
         public DbSet<DisciplineTeacher> DisciplineTeachers { get; set; } = null!;
+        /// <summary>
+        /// Занятие
+        /// </summary>
         public DbSet<Couple> Couples { get; set; } = null!;
+        /// <summary>
+        /// Неделя
+        /// </summary>
+        public DbSet<Week> Week { get; set; } = null!;
+        /// <summary>
+        /// День недели
+        /// </summary>
+        public DbSet<WeekDay> WeekDay { get; set; } = null!;
 
         public ApplicationContext() { }
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
@@ -44,6 +55,22 @@ namespace Web.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Week>(entity =>
+            {
+                entity.HasKey(x => x.Id);
+                entity.Property(x => x.Name);
+
+                entity.HasMany(x => x.WeekDays).WithOne(x => x.Week);
+            });
+
+            modelBuilder.Entity<WeekDay>(entity =>
+            {
+                entity.HasKey(x => x.Id);
+                entity.Property(x => x.Name);
+
+                entity.HasMany(x => x.Couples).WithOne(x => x.WeekDay);
+            });
+
             modelBuilder.Entity<Teacher>(entity =>
             {
                 entity.HasKey(x => x.Id);
@@ -105,15 +132,15 @@ namespace Web.Context
             modelBuilder.Entity<Couple>(entity =>
             {
                 entity.HasKey(x => x.Id);
-                entity.Property(x => x.WeekType).IsRequired();
-                entity.Property(x => x.WeekDay).IsRequired();
                 entity.Property(x => x.LectureTime).IsRequired();
 
                 entity.HasOne(x => x.Audience).WithMany(x => x.Couples);
                 entity.HasOne(x => x.Discipline).WithMany(x => x.Couples);
                 entity.HasOne(x => x.LessonType).WithMany(x => x.Couples);
                 entity.HasOne(x => x.Teacher).WithMany(x => x.Couples);
-                entity.HasOne(x => x.Group).WithMany(x => x.Couples);
+                entity.HasOne(x => x.WeekDay).WithMany(x => x.Couples);
+
+                entity.HasMany(x => x.Groups).WithOne(x => x.Couple);
             });
         }
     }
